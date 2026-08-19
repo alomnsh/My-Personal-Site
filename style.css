@@ -28,7 +28,6 @@ body {
     backdrop-filter: blur(8px);
     border-bottom: 1px solid #1f2937;
     z-index: 1000;
-    box-shadow: 0 4px 25px rgba(37, 94, 240, 0.577);
 }
 
 .nav-container {
