@@ -23,36 +23,35 @@ html{
     align-items: center;
 }
 
-.nav_logo {
+.nav-logo {
     font-weight: bold;
     font-size: 1.1rem;
     color: #38bdf8 !important;
 }
 
-.nav_links {
+.nav-links {
     display: flex;
     gap: 20px;
 }
 
-.nav_links a {
+.nav-links a {
     color: #9ca3af;
     font-size: 0.95rem;
     font-weight: 500;
     transition: color 0.2s ease;
 }
 
-.nav_links a:hover {
+.nav-links a:hover {
     color: #ba9ffb;
 }
 
 body {
-    padding-top: 100px;
     background-color: #0b0f19;
     color: #e2e8f0;
     font-family: system-ui, -apple-system, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 40px 20px;
+    padding: 100px 20px 40px 20px;
 }
 
 section {
