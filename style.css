@@ -16,7 +16,21 @@ section {
 }
 
 h1 {
+    color: #38bdf8;
+    margin-top: 0;
+}
+
+h2 {
     color: #ba9ffb;
     border-bottom: 1px solid #334155;
     padding-bottom: 5px;
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
