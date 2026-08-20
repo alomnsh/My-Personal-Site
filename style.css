@@ -3,12 +3,30 @@ html {
 }
 
 body {
-    background-color: #0b0f19;
     color: #e2e8f0;
     font-family: system-ui, -apple-system, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 100px 20px 40px 20px;
+
+    background-color: #0b0f19;
+    background-image: 
+        /* Tiny background stars */
+        radial-gradient(1px 1px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 75px 140px, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 150px 60px, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 220px 280px, #ffffff, rgba(0,0,0,0)),
+        
+        /* Medium foreground stars */
+        radial-gradient(1.5px 1.5px at 40px 180px, #e2e8f0, rgba(0,0,0,0)),
+        radial-gradient(1.5px 1.5px at 190px 45px, #e2e8f0, rgba(0,0,0,0)),
+        radial-gradient(1.5px 1.5px at 290px 220px, #e2e8f0, rgba(0,0,0,0)),
+        
+        /* Scattered distant stars */
+        radial-gradient(1px 1px at 100px 250px, #94a3b8, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 310px 90px, #94a3b8, rgba(0,0,0,0));
+
+    background-size: 350px 350px;
 }
 
 .page-view {
