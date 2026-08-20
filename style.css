@@ -124,23 +124,12 @@ a:hover {
     margin-bottom: 8px;
 }
 
-.card-image-slot {
+.card-media-group img {
     width: 100%;
-    height: 180px;
-    background-color: #0b0f19;
-    border: 1px dashed #4b5563;
-    border-radius: 6px;
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.card-image-slot img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
 }
 
 .card-media-group {
@@ -148,11 +137,20 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     margin-top: 15px;
+    padding: 15px;
+    background-color: #0b0f19;
+    border: 1px dashed #4b5563; 
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.card-media-group.single-image {
+    grid-template-columns: 1fr;
 }
 
 @media (max_width: 600px) {
     .card-media-group {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 }
 
@@ -160,6 +158,9 @@ a:hover {
     color: #4b5563;
     font-size: 0.85rem;
     font-family: monospace;
+    display: block;
+    text-align: center;
+    width: 100%;
 }
 
 .popup-overlay {
