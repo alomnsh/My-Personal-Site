@@ -19,7 +19,7 @@
             </div>
         </nav>
 
-        <!-- VIEW PAGE 1: INTRO & ABOUT -->
+        <!-- VIEW PAGE 1: INTRO, ABOUT & CONTACT ME -->
         <div id="about-view" class="page-view active">
             <section id="intro">
                 <h1>Hi! I am Alomnsh</h1>
@@ -29,6 +29,8 @@
             <section id="about">
                 <h2>About Me!</h2>
                 <p>I am a junior in highschool, my hobbies are building things like RC Planes, Model Rockets, and Robots. I plan to do Aerospace Engineering for college</p>
+                
+                <button class="contact-btn" onclick="togglePopup(true)">Contact Me</button>
             </section>
         </div>
 
@@ -42,19 +44,23 @@
                     <!-- Project Card 1 -->
                     <div class="project-card">
                         <div class="card-text">
-                            <h3><a href="https://github.io" target="_blank">The Ares Horizon 🚀</a></h3>
+                            <h3><a href="https://alomnsh.github.io/The-Ares-Horizon" target="_blank">The Ares Horizon 🚀</a></h3>
                             <p>A game where you act as a Flight Director at NASA. Successfully launch, navigate, and land your spacecraft on the surface of Mars.</p>
                         </div>
                         <div class="card-image-slot">
-                            <img src="TAH Minigame Mode.png" alt="The Ares Horizon" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=img-placeholder>[ Ares Horizon Image Slot ]</span>'">
-                            <img src="TAH Story Mode.png" alt="The Ares Horizon" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=img-placeholder>[ Ares Horizon Image Slot ]</span>'">
+                            <div class="card-media-group">
+                                <img src="TAH Minigame Mode.png" alt="The Ares Horizon" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=img-placeholder>[ Ares Horizon Image Slot ]</span>'">
+                            </div>
+                            <div class="card-media-group">
+                                <img src="TAH Story Mode.png" alt="The Ares Horizon" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=img-placeholder>[ Ares Horizon Image Slot ]</span>'">
+                            </div>
                         </div>
                     </div>
 
                     <!-- Project Card 2 -->
                     <div class="project-card">
                         <div class="card-text">
-                            <h3><a href="https://github.com" target="_blank">Frictionless Notes 📝</a></h3>
+                            <h3><a href="https://alomnsh.github.com/Frictionless-Notes" target="_blank">Frictionless Notes 📝</a></h3>
                             <p>Record a lecture and get notes made in seconds. Completely free, no sign-up, and no data collection.</p>
                         </div>
                         <div class="card-image-slot">
@@ -64,7 +70,25 @@
                 </div>
             </section>
         </div>
+        
+        <div id="contact-popup" class="popup-overlay">
+            <div class="popup-box">
+                <span class="close-popup" onclick="togglePopup(false)">&times;</span>
+                <h3>Contact Me</h3>
 
+                <div class="contact-info-grid">
+                    <span class="coord-label">Primary Contact</span>
+                    <span class="coord-value">alomnsh@yahoo.com</span>
+                </div>
+                <div class="contact-row">
+                    <span class="coord-label">GitHub</span>
+                    <span class="coord-value"><a href="https://github.com/alomnsh">My GitHub</a></span>
+                </div>
+
+                <button class="close-panel-btn" onclick="togglePopup(false)">X</button>
+            </div>
+        </div>
+        
         <script>
             function switchView(viewId) {
 
@@ -77,6 +101,15 @@
                 navLinks.forEach(link => link.classList.remove('active'));
 
                 event.target.classList.add('active');
+            }
+
+            function togglePopup(show) {
+                const popup = document.getElementById('contact-popup');
+                if (show) {
+                    popup.classList.add('open');
+                } else {
+                    popup.classList.remove('open')
+                }
             }
         </script>
     </body>

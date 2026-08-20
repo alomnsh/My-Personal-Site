@@ -143,8 +143,81 @@ a:hover {
     object-fit: cover;
 }
 
+.card-media-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+@media (max_width: 600px) {
+    .card-media-group {
+        grid-template-columns: 1fr;
+    }
+}
+
 .img-placeholder {
     color: #4b5563;
     font-size: 0.85rem;
     font-family: monospace;
+}
+
+.contact-info-grid {
+    background-color: #0b0f19;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.contact-row {
+    margin-bottom: 15px;
+}
+
+.contact-row:last-child {
+    margin-bottom: 0;
+}
+
+.coord-label {
+    display: block;
+    font-size: 0.75rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.coord-value {
+    font-size: 1rem;
+    font-family: monospace;
+    color: #e2e8f0;
+}
+
+.coord-value a{
+    color: #ba9ffb;
+}
+
+.coord-value a:hover {
+    color: #38bdf8;
+    text-decoration: underline;
+}
+
+.close-panel-btn {
+    width: 100%;
+    background-color: rgba(37, 94, 240, 0.1);
+    border: 1px solid rgba(37, 94, 240, 0.4);
+    color: #38bdf8;
+    padding: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.close-panel-btn:hover {
+    background-color: rgba(37, 94, 240, 0.2);
+    border-color: #38bdf8;
+    box-shadow: 0 0 15px rgba(37, 94, 240, 0.577);
 }
