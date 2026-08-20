@@ -124,33 +124,35 @@ a:hover {
     margin-bottom: 8px;
 }
 
-.card-media-group img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 8px;
-    display: block;
-}
-
 .card-media-group {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    grid-template-columns: 1fr; 
+    gap: 20px;
     margin-top: 15px;
-    padding: 15px;
+    padding: 20px;
     background-color: #0b0f19;
-    border: 1px dashed #4b5563; 
+    border: 1px dashed #4b5563;
     border-radius: 8px;
     box-sizing: border-box;
+    justify-items: center;     
 }
 
 .card-media-group.single-image {
     grid-template-columns: 1fr;
 }
 
+.card-media-group img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 @media (max_width: 600px) {
     .card-media-group {
-        grid-template-columns: 1fr !important;
+        width: 100%;;
     }
 }
 
