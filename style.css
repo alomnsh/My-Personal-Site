@@ -90,7 +90,6 @@ section {
     background-color: #111827;
     border: 1px solid #1f2937;
     border-radius: 12px;
-    box-shadow: 0 10px 30px -5px rgba(37, 94, 240, 0.577);
 }
 
 h1 {
@@ -212,7 +211,6 @@ a:hover {
     width: 90%;
     position: relative;
     text-align: center;
-    box-shadow: 0 10px 40px rgba(37, 94, 240, 0.577);
 }
 
 .close-popup {
@@ -280,7 +278,6 @@ a:hover {
 .close-panel-btn {
     width: 100%;
     background-color: rgba(37, 94, 240, 0.1);
-    border: 1px solid rgba(37, 94, 240, 0.4);
     color: #38bdf8;
     padding: 12px;
     font-size: 0.95rem;
@@ -293,7 +290,6 @@ a:hover {
 .close-panel-btn:hover {
     background-color: rgba(37, 94, 240, 0.2);
     border-color: #38bdf8;
-    box-shadow: 0 0 15px rgba(37, 94, 240, 0.577);
 }
 
 .subsection-title {
