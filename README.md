@@ -10,4 +10,5 @@ My personal website and portfolio, it uses `html` for the structure and `css` fo
 * Star background
 ## Credits
 * Credit to the Hack Club Personal Site workshop to help me get started!
+
 ![Website Picture](assets/Website%20SS.png)
