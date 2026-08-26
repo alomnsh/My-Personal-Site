@@ -314,11 +314,11 @@ h2 {
     font-family: 'Fira Code', monospace;
     font-size: 0.85rem;
     color: #e2e8f0;
-    background-color: #1e293b;
+    background: #1e293b;
     border: 1px solid #334155;
     padding: 6px 14px;
     border-radius: 4px;
-    transition: all 0.15 ease-in-out;
+    transition: all 0.15s ease-in-out;
 }
 
 .inventory-tag:hover {
