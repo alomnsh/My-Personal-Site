@@ -309,3 +309,28 @@ h2 {
     flex: 1 1 100%; 
   }
 }
+
+.inventory-tag {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    color: #e2e8f0;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    padding: 6px 14px;
+    border-radius: 4px;
+    transition: all 0.15 ease-in-out;
+}
+
+.inventory-tag:hover {
+  border-color: #0ea5e9;
+  background: rgba(14, 165, 233, 0.08);
+  color: #38bdf8;
+  transform: translateY(-1px);
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
