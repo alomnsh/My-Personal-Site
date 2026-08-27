@@ -12,7 +12,7 @@ body {
   font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
   line-height: 1.65;
   
-  /* A grid pattern to fit the engineering theme */
+  /* A grid pattern to for the engineering theme */
   background-image: 
     linear-gradient(rgba(14, 165, 233, 0.04) 1px, transparent 1px),
     linear-gradient(90deg, rgba(14, 165, 233, 0.04) 1px, transparent 1px);
