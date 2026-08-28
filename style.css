@@ -334,3 +334,91 @@ h2 {
     gap: 10px;
     margin-bottom: 10px;
 }
+
+.org-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.org-card-link {
+    text-decoration: none !important;
+    display: block;
+}
+
+.org-card {
+    background: #131e35;
+    padding: 24px;
+    border-radius: 6px;
+    border: 1px solid #22314d;
+    box-shadow: 4px 4px 0px 0px rgba(14, 165, 233, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.2s ease;
+}
+
+.org-card-link:nth-child(even) .org-card {
+    flex-direction: row-reverse;
+}
+
+.org-card:hover {
+    transform: scale(1.015);
+    border-color: #38bdf8;
+}
+
+.org-content {
+    flex: 1;
+}
+
+.org-card h3 {
+    font-family: 'Fira Code', monospace;
+    margin: 0 0 6px 0;
+    font-size: 1.25rem;
+    color: #f8fafc;
+}
+
+.org-role {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+    color: #475569;
+    margin: 0 0 16px 0;
+}
+
+.org-card p {
+    margin: 0;
+    color: #d1d5db;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.org-media {
+    flex: 0 0 140px;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.org-media img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    .org-card, .org-card-link:nth-child(even) .org-card {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .org-media {
+        width: 80px;
+        height: 80px;
+        flex: 0 0 80px;
+    }
+}
