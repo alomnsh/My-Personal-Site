@@ -146,6 +146,12 @@ h2 {
   gap: 20px;
 }
 
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .project-card {
   background: #131e35; 
   padding: 24px;
@@ -154,7 +160,7 @@ h2 {
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.project-card:hover {
+.project-card-link:hover .project-card {
   transform: scale(1.015); 
   border-color: #38bdf8;
 }
@@ -162,15 +168,15 @@ h2 {
 .project-card h3 {
   margin: 0 0 8px 0;
   font-size: 1.15rem;
-}
-
-.project-card h3 a {
   color: #f1f5f9;
-  text-decoration: none;
 }
 
-.project-card h3 a:hover {
+.project-card-link:hover .project-card h3 {
   color: #38bdf8;
+}
+
+.project-card p {
+  color: #94a3b8;
 }
 
 .card-media-group {
@@ -243,7 +249,7 @@ h2 {
 }
 
 .popup-box h3 {
-  margin: 0 0 20px 0;
+  margin: 0 0 16px 0;
   font-family: 'Fira Code', monospace;
   color: #f8fafc;
   font-size: 1.25rem;
@@ -258,25 +264,24 @@ h2 {
 }
 
 .contact-row {
-  margin-bottom: 12px;
-}
-
-.contact-row:last-child {
-  margin-bottom: 0;
-}
-
-.coord-label {
-  display: block;
-  font-family: 'Fira Code', monospace;
-  font-size: 0.7rem;
-  color: #475569;
-  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .coord-value {
   font-size: 0.95rem;
   font-family: 'Fira Code', monospace;
+}
+
+.coord-value a {
   color: #e2e8f0;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.coord-value a:hover {
+  color: #0ea5e9;
 }
 
 .close-panel-btn {
@@ -516,4 +521,29 @@ h2 {
 .achievements-link:hover .achievements-card {
     transform: scale(1.015);
     border-color: #38bdf8;
+}
+
+.status-pill {
+  display: inline-block;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin-left: 8px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-pill.completed {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.status-pill.progress {
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.3);
 }
