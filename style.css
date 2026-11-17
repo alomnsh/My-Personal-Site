@@ -136,10 +136,6 @@ h2 {
   margin: 45px 0 15px 0;
 }
 
-.subsection-title::before {
-  content: "⚡ ";
-}
-
 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
